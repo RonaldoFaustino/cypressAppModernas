@@ -1,0 +1,18 @@
+{
+  "name": "cypressAppModernas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "Ronaldo Faustino <ohnirucse@msn.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^3.7.0",
+    "cypress-xpath": "^1.4.0"
+  }
+}

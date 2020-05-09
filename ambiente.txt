@@ -1,0 +1,55 @@
+
+npm init -y                         => criar o package json, arquivo de configuração
+npm install cypress@3.6.0           => instalando Cypress
+./node_modules/.bin/cypress open    => Para abrir cypress configurar o package com comando
+npm run open
+npm run cypress:run
+npm run cypress:run -- --spec cypress/integration/nome.spec.js
+npm run cypress:run -- --spec cypress/integration/barriga/**/*
+npm run cypress:run -- --spec cypress/integration/nome.spec.js --headed --no-exit
+npm run cypress:run -- --spec cypress/integration/nome.spec.js --browser chrome
+
+configuração de timeout
+cypres.json
+// "defaultCommandTimeout": 5000
+
+Configuração de Locator
+index.js
+Cypress.SelectorPlayground.defaults({
+    selectorPriority: ['id',
+                       'class',
+                       'attributes',
+                       'data-cy',
+                       'data-test', 
+                       'data-testid',
+                       'tag',
+                       'nth-child'
+                    ]
+  })
+
+Adicionar Plugin para Xpath
+npm install cypress-xpath
+
+// {
+//     "viewportWidth": 1280,
+//     "viewportHeight": 1024
+// }
+
+Test de API
+
+Protocolo
+|     Dominio / Base URL
+|   |                         Recurso
+|   |                        |        ID
+|   |                        |      |
+http//barrigarestwcaquino.me/contas/1
+
+Metodos 
+Get
+Post  {body}
+Put   {Body}
+Delete
+
+test
+test@qa.com
+321
